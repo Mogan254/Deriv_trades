@@ -1,0 +1,2 @@
+# Deriv_trades
+Deriv_Trade is a modern forex platform designed to help traders learn, grow, and profit with confidence. We provide real-time market insights, easy payment options, and a clean trading experience tailored for both beginners and professionals.
