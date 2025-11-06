@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deriv_Trade</title>
+  <meta name="description" content="Deriv_Trade — Modern forex platform. Live signals, courses, and easy payments (M-Pesa Till 3675058)." />
+  <style>
+    /* ====== Basic reset & typography ====== */
+    :root {
+      --bg: #000;
+      --panel: #0d0d0d;
+      --accent: #e00;
+      --muted: #bbb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: #fff;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ====== Header & nav ====== */
+    header {
+      background: linear-gradient(90deg,#070707 0%, #111 100%);
+      border-bottom: 3px solid var(--accent);
+      padding: 28px 18px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+    header p { margin: 6px 0 0; color: var(--muted); }
+
+    nav {
+      display:flex;
+      gap:14px;
+      justify-content:center;
+      background: #080808;
+      border-bottom: 1px solid rgba(255,0,0,0.08);
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+    nav a {
+      color: #fff;
+      font-weight:600;
+      padding: 8px 10px;
+      border-radius:6px;
+    }
+    nav a:hover { background: rgba(255,0,0,0.06); }
+
+    /* ====== Layout ====== */
+    .container { max-width: 1000px; margin: 28px auto; padding: 0 18px; }
+    section { margin-bottom: 28px; padding-bottom: 18px; border-bottom: 1px solid #171717; }
+    h2 { color: var(--accent); margin: 0 0 12px; font-size: 1.25rem; }
+
+    /* ====== Cards ====== */
+    .card {
+      background: var(--panel);
+      padding: 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+      border-left: 4px solid rgba(224,0,0,0.9);
+    }
+
+    /* ====== Icons row ====== */
+    .icon-row { display:flex; gap:12px; align-items:center; margin: 12px 0; flex-wrap:wrap; }
+    .icon-row img { width:48px; height:48px; object-fit:contain; background:#fff; padding:6px; border-radius:8px; }
+
+    /* ====== Buttons ====== */
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight:700;
+      border: none;
+      cursor: pointer;
+    }
+    .btn.ghost { background: transparent; border:1px solid rgba(255,0,0,0.12); color: var(--muted); }
+    .actions { margin-top: 12px; }
+
+    /* ====== Forms ====== */
+    form input, form textarea {
+      width:100%;
+      padding:10px;
+      margin:8px 0;
+      background:#111;
+      border:1px solid rgba(255,0,0,0.12);
+      color:#fff;
+      border-radius:6px;
+    }
+
+    /* ====== Footer & WhatsApp ====== */
+    .footer {
+      padding: 20px;
+      text-align:center;
+      color: var(--muted);
+      border-top: 1px solid #151515;
+      margin-top: 40px;
+    }
+    .whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 999px;
+      font-weight:700;
+      box-shadow: 0 6px 18px rgba(224,0,0,0.12);
+      z-index: 60;
+    }
+
+    /* ====== Responsive ====== */
+    @media (max-width:600px) {
+      header h1 { font-size: 1.6rem; }
+      .icon-row img { width:40px; height:40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Deriv_Trade</h1>
+    <p>Smart Forex Trading • Live Signals • Market Insights</p>
+  </header>
+
+  <nav>
+    <a href="#live">Live Prices</a>
+    <a href="#about">About</a>
+    <a href="#signals">Signals</a>
+    <a href="#courses">Courses</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#payments">Payments</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="container">
+    <!-- Live -->
+    <section id="live">
+      <h2>Live Market Prices</h2>
+      <p style="color:var(--muted)">Sample live prices (connect a live API to replace these placeholders).</p>
+      <div class="card">EUR / USD — <strong>1.0864</strong></div>
+      <div class="card">GBP / USD — <strong>1.2741</strong></div>
+      <div class="card">USD / JPY — <strong>147.82</strong></div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Deriv_Trade</h2>
+      <p class="card">Deriv_Trade is your trusted forex trading partner. We provide market analysis, high-quality signals, and training for traders who want to level up their skills and profits.</p>
+    </section>
+
+    <!-- Signals -->
+    <section id="signals">
+      <h2>Forex Signals</h2>
+      <div class="card">BUY EUR/USD • TP: 1.0990 • SL: 1.0790</div>
+      <div class="card">SELL XAU/USD • TP: 2280 • SL: 2330</div>
+      <div class="card">BUY GBP/JPY • TP: 192.50 • SL: 187.20</div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+      <h2>Courses & Training</h2>
+      <div class="card">Beginner Forex Course — Learn charts, orders, and risk management.</div>
+      <div class="card">Advanced Strategy Course — Price action, indicators, and trade management.</div>
+      <div class="card">Risk Management Mastery — Protect your capital.</div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="card">"Deriv_Trade signals helped me grow my account." — Alex</div>
+      <div class="card">"Accurate and reliable." — Faith</div>
+      <div class="card">"Clear courses for beginners." — Brian</div>
+    </section>
+
+    <!-- Payments -->
+    <section id="payments">
+      <h2>Payment Methods</h2>
+      <p style="color:var(--muted)">Please make payments to the M-Pesa Till below. After payment, send the transaction ID via WhatsApp or the contact form to verify.</p>
+
+      <!-- Till -->
+      <div class="card" style="display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div style="font-size:0.95rem; color:var(--muted)">M-Pesa Till</div>
+          <div style="font-weight:800; font-size:1.2rem; color:var(--accent)">3675058</div>
+        </div>
+        <div>
+          <button class="btn" onclick="promptMpesaPay()">Pay with M-Pesa</button>
+          <small style="display:block; color:var(--muted); margin-top:6px">STK Push via your backend</small>
+        </div>
+      </div>
+
+      <!-- icons -->
+      <div class="icon-row" style="margin-top:14px;">
+        <!-- Using Wikimedia svgs (allowed). Replace with your hosted images if you prefer. -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/M-PESA_LOGO-01.svg" alt="M-Pesa" title="M-Pesa" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" title="PayPal" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" title="Visa" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Mastercard-logo.png" alt="MasterCard" title="MasterCard" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Crypto" title="Crypto" />
+      </div>
+
+      <!-- Extra payment options -->
+      <div class="card">✅ PayPal — contact us for payment link</div>
+      <div class="card">✅ Visa / MasterCard</div>
+      <div class="card">✅ Bank Transfer</div>
+      <div class="card">✅ Crypto (USDT / BTC)</div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="card"><strong>How do I start?</strong><br>Open a broker account, deposit, and follow our signals/courses.</div>
+      <div class="card"><strong>Are signals free?</strong><br>We offer both free and premium signals.</div>
+      <div class="card"><strong>How do I pay?</strong><br>Use M-Pesa Till 3675058 or other listed methods.</div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="handleContact(event)">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea id="message" placeholder="Message / Transaction ID (if paid)" rows="5" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> Deriv_Trade — All rights reserved.
+    </div>
+  </main>
+
+  <!-- WhatsApp button -->
+  <a class="whatsapp" href="https://wa.me/254796518099" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+
+  <script>
+    // ====== Small helpers ======
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    function handleContact(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // For now we simply open WhatsApp prefilled to make it easy for you to receive messages.
+      const wa = 'https://wa.me/254796518099?text=' + encodeURIComponent(
+        `Contact from website:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+      );
+      window.open(wa, '_blank');
+    }
+
+    // ====== Prompt and call backend for STK Push ======
+    async function promptMpesaPay() {
+      try {
+        // Ask user phone and amount
+        let phone = prompt('Enter your M-Pesa phone (07XXXXXXXX or 2547XXXXXXXX):');
+        if (!phone) return;
+        phone = phone.trim();
+
+        // Normalize phone to 2547XXXXXXXX if user entered 07XXXXXXXX
+        if (phone.startsWith('0')) {
+          phone = '254' + phone.slice(1);
+        } else if (phone.startsWith('+')) {
+          phone = phone.slice(1);
+        }
+
+        const amountRaw = prompt('Enter amount (KES):', '200');
+        if (!amountRaw) return;
+        const amount = parseFloat(amountRaw);
+        if (isNaN(amount) || amount <= 0) { alert('Invalid amount'); return; }
+
+        // Show small message
+        alert('Requesting STK push — your phone will receive a prompt if backend is configured.');
+
+        // ====== IMPORTANT: Replace this URL with your deployed backend URL ======
+        const BACKEND_URL = 'https://YOUR_BACKEND_URL'; // e.g. https://deriv-trade-backend.onrender.com
+        const endpoint = BACKEND_URL.replace(/\/$/, '') + '/api/stkpush';
+
+        // Send request to backend
+        const resp = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            phone: phone,
+            amount: amount,
+            till: '3675058'
+          })
+        });
+
+        if (!resp.ok) {
+          const err = await resp.text();
+          console.error('STK push error', err);
+          alert('Failed to start STK push. Check console for details.');
+          return;
+        }
+
+        const data = await resp.json();
+        console.log('STK push result', data);
+        alert('STK push started. Check your phone to complete payment.');
+
+      } catch (err) {
+        console.error(err);
+        alert('An error occurred. Open the browser console for details.');
+      }
+    }
+
+    // Optional: Auto-refresh placeholder prices every 15s (simulate)
+    setInterval(() => {
+      // In the real site you would fetch a price API
+      const nodes = document.querySelectorAll('#live .card');
+      nodes.forEach(n => {
+        const base = parseFloat((1.00 + Math.random() * 0.3).toFixed(4));
+        n.innerHTML = n.innerHTML.split('—')[0] + '— <strong>' + base + '</strong>';
+      });
+    }, 15000);
+  </script>
+</body>
+</html>
