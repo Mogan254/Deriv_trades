@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deriv_Trade</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid red;
+    }
+    header h1 {
+      margin: 0;
+      color: red;
+      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #0d0d0d;
+      padding: 10px;
+      border-bottom: 1px solid red;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-bottom: 1px solid #222;
+    }
+    h2 {
+      color: red;
+      margin-bottom: 15px;
+    }
+    .signal-box, .testimonial, .course-box, .faq-box {
+      background: #111;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 3px solid red;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #222;
+      border: 1px solid red;
+      color: white;
+    }
+    form button {
+      padding: 10px 20px;
+      background: red;
+      border: none;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: red;
+      padding: 15px 20px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Deriv_Trade</h1>
+  <p>Smart Forex Trading • Live Signals • Market Insights</p>
+</header>
+
+<nav>
+  <a href="#live">Live Prices</a>
+  <a href="#about">About</a>
+  <a href="#signals">Signals</a>
+  <a href="#courses">Courses</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="live">
+  <h2>Live Market Prices</h2>
+  <p>Below are sample live prices. You can later connect to a real API.</p>
+  <div class="signal-box">EUR/USD: 1.0864</div>
+  <div class="signal-box">GBP/USD: 1.2741</div>
+  <div class="signal-box">USD/JPY: 147.82</div>
+</section>
+
+<section id="about">
+  <h2>About Deriv_Trade</h2>
+  <p>Deriv_Trade is your trusted forex trading partner. We provide accurate market analysis, high-quality signals, and professional guidance for traders who want to grow and win in the forex market.</p>
+</section>
+
+<section id="signals">
+  <h2>Forex Signals</h2>
+  <div class="signal-box">BUY EUR/USD • TP: 1.0990 • SL: 1.0790</div>
+  <div class="signal-box">SELL XAU/USD • TP: 2280 • SL: 2330</div>
+  <div class="signal-box">BUY GBP/JPY • TP: 192.50 • SL: 187.20</div>
+</section>
+
+<section id="courses">
+  <h2>Forex Courses</h2>
+  <div class="course-box">Beginner Forex Course – Learn the basics of trading.</div>
+  <div class="course-box">Advanced Strategy Course – Master profitable setups.</div>
+  <div class="course-box">Risk Management Mastery – Protect your capital always.</div>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial">"Deriv_Trade signals have helped me grow my account!" – Alex</div>
+  <div class="testimonial">"Very accurate and reliable. Highly recommend!" – Faith</div>
+  <div class="testimonial">"Great courses for beginners. Clear and straight to the point." – Brian</div>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <div class="faq-box"><strong>How do I start trading?</strong><br>Open an account with your preferred broker and join our signals.</div>
+  <div class="faq-box"><strong>Are your signals free?</strong><br>We offer both free and premium signals.</div>
+  <div class="faq-box"><strong>Do you teach beginners?</strong><br>Yes, we have beginner-friendly forex courses.</div>
+</section>
+
+<section id="payments">
+  <h2>Payment Methods</h2>
+  <p>Please make all payments to our M-Pesa Till number below. After payment, send the confirmation (transaction ID) via WhatsApp or the contact form for verification.</p>
+
+  <div class="signal-box">📱 <strong>M-Pesa Till:</strong> <span style="color: red;">3675058</span></div>
+
+  <!-- Payment Icons -->
+  <div class="icon-row">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/M-PESA_LOGO-01.svg" alt="M-Pesa" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Mastercard-logo.png" alt="MasterCard" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Crypto" />
+  </div>
+
+  <!-- M-Pesa STK Push Button -->
+  <a class="pay-button" href="#" onclick="startSTKPush()">Pay with M-Pesa</a>
+
+  <script>
+    function startSTKPush() {
+      alert('M-Pesa STK Push will pop up shortly...');
+      // Placeholder for live backend
+      fetch('https://your-backend-api.com/stkpush', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount: 100,
+          phone: prompt('Enter your M-Pesa number (07XXXXXXXX):'),
+          till: '3675058'
+        })
+      })
+      .then(r => r.json())
+      .then(data => console.log(data))
+      .catch(err => console.error(err));
+    }
+  </script>
+
+  <div class="signal-box">✅ PayPal</div>
+  <div class="signal-box">✅ Visa / MasterCard</div>
+  <div class="signal-box">✅ Bank Transfer</div>
+  <div class="signal-box">✅ Crypto (USDT / BTC)</div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<a class="whatsapp-btn" href="https://wa.me/254796518099" target="_blank">Chat on WhatsApp</a>
+
+</body>
+</html>
